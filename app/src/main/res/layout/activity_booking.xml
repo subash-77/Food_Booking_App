@@ -6,41 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".Booking">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="553dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="-21dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/foodriceimage" />
+
+    <CheckBox
+        android:id="@+id/biriyani"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginTop="243dp"
-        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="396dp"
+        android:text="BIRIYANI"
+        android:onClick="br"/>
 
-        android:orientation="vertical">
+    <CheckBox
+        android:id="@+id/lemonrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="395dp"
+        android:layout_marginEnd="7dp"
+        android:text="LEMONRICE"
+        android:onClick="lm"/>
 
-        <CheckBox
-            android:id="@+id/biriyani"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BIRIYANI" />
+    <CheckBox
+        android:id="@+id/sambarrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="19dp"
+        android:text="SAMBAR RICE"
+        android:onClick="sm"/>
 
-        <CheckBox
-            android:id="@+id/curdrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CURD RICE" />
-
-        <CheckBox
-            android:id="@+id/lemonrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LEMONRICE" />
-
-        <CheckBox
-            android:id="@+id/sambarrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="SAMBAR RICE" />
-
-    </LinearLayout>
+    <CheckBox
+        android:id="@+id/curdrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="63dp"
+        android:text="CURD RICE"
+        android:onClick="cd"/>
 
     <Button
         android:id="@+id/Book"
@@ -48,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="203dp"
+        android:layout_marginBottom="165dp"
         android:text="Place Now" />
 
     <TextView
@@ -58,8 +80,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="81dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="60dp"
         android:textSize="30sp" />
 
 </RelativeLayout>

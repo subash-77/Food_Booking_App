@@ -51,4 +51,20 @@ public class Booking extends AppCompatActivity {
             }
         });
     }
+
+    public void br(View view) {
+        Toast.makeText(this, "RS:90", Toast.LENGTH_SHORT).show();
+    }
+
+    public void lm(View view) {
+        Toast.makeText(this, "RS:45", Toast.LENGTH_SHORT).show();
+    }
+
+    public void sm(View view) {
+        Toast.makeText(this, "RS:50", Toast.LENGTH_SHORT).show();
+    }
+
+    public void cd(View view) {
+        Toast.makeText(this, "RS:40", Toast.LENGTH_SHORT).show();
+    }
 }
